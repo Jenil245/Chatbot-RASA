@@ -1,0 +1,112 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Hii
+    - Hello
+    - Good morning
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - okay
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: corona_intro
+  examples: |
+    - What is corona virus
+    - what is covid
+    - what is a novel corona virus
+    - what is covid-19
+    - tell me about corona
+    - can you tell me about covid
+    - What's the covid
+    - what is corona
+    - what's covid
+- intent: corona_spread
+  examples: |
+    - how can i get corona
+    - how does corona virus spread
+    - how does the virus spread
+    - how covid cases are increasing
+    - how does corona spread
+    - how can i avoid getting corona
+    - how covid is spreaded
+    - how corona is spread
+    - how is it spread
+- intent: warm_weather
+  examples: |
+    - can sun heat prevent covid disease
+    - can warm weather kill virus?
+    - can sun rays kill corona virus
+    - would corona virus go away in warm weather
+    - is it true that corona is affected by heat and warm weather
+    - can i get corona even in sun light
+    - Can i get corona in sun light
+- intent: solution
+  examples: |
+    - how can i prevent corona disease
+    - what should i do to avoid getting corona
+    - how can i protect myself
+    - what precaution i can take
+    - is wearing mask help?
+    - what should i do if i get corona
+    - how can it be prevented
+    - How can i prevent myself from corona
+    - how can i prevent corona
+- intent: find_hospital
+  examples: |
+    - hospital near me
+    - where is the nearest hospital
+    - nearest hospital
+    - hospitals in ahmedabda
+    - hospital in abdad
+    - hospitals near kalol
+    - hospitals in gandhinagar
+    - hospitals near me
+    - hospitals in ahmedabad
+    - hospital in ahmedabad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you a bot

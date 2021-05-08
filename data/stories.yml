@@ -1,0 +1,49 @@
+version: "2.0"
+
+stories:
+
+- story: greeting
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: what is corona
+  steps:
+  - intent: corona_intro
+  - action: utter_corona_intro
+
+- story: how does corona spread
+  steps:
+  - intent: corona_spread
+  - action: utter_corona_spread
+
+- story: corona warm weather
+  steps:
+  - intent: warm_weather
+  - action: utter_warm_weather
+
+- story: corona high risk
+  steps:
+  - intent: high_risk
+  - action: utter_high_risk
+
+- story: corona solution
+  steps:
+  - intent: solution
+  - action: utter_solution
+
+- story: find hospital
+  steps:
+  - intent: find_hospital
+  - action: action_find_hospital
+
+- story: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+ 
+- story: bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+

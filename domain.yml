@@ -1,0 +1,60 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- corona_intro:
+    use_entities: true
+- corona_spread:
+    use_entities: true
+- warm_weather:
+    use_entities: true
+- high_risk:
+    use_entities: true
+- affirm:
+    use_entities: true
+- solution:
+    use_entities: true
+- deny:
+    use_entities: true
+- find_hospital:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_goodbye:
+  - text: Bye, Take Care!
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_corona_intro:
+  - text: Coronaviruses cause respiratory tract infections that can be mild, such as some cases of the common cold (among other possible causes, predominantly rhinoviruses), and others that can be lethal, such as SARS, MERS, and COVID-19.
+  utter_corona_spread:
+  - text: When an infected person coughs, sneezes, or talks, droplets or tiny particles called aerosols carry the virus into the air from their nose or mouth. Anyone who is within 6 feet of that person can breathe it into their lungs. Airborne transmission. Research shows that the virus can live in the air for up to 3 hours.
+  utter_warm_weather:
+  - text: It is not yet known whether weather and temperature impact the spread of COVID-19. Some other viruses, like the common cold and flu, spread more during cold weather months but that does not mean it is impossible to become sick with these viruses during other months.  At this time, it is not known whether the spread of COVID-19 will decrease when weather becomes warmer.  There is much more to learn about the transmissibility, severity, and other features associated with COVID-19 and investigations are ongoing.
+  utter_high_risk:
+  - text: Older adults and people of any age who have serious underlying medical conditions may be at higher risk for more serious complications from COVID-19. These people who may be at higher risk of getting very sick from this illness, includes; Older adults, People who have serious underlying medical conditions like... Heart disease, Diabetes, Lung disease.
+  utter_solution:
+  - text: You can prevent corona disease by keeping social distancing and wearing mask. Also, You should get both dose of vaccine.
+actions:
+- utter_greet
+- utter_goodbye
+- utter_iamabot
+- utter_corona_intro
+- utter_corona_spread
+- utter_warm_weather
+- utter_solution
+- utter_high_risk
+- action_find_hospital
+forms: {}
+e2e_actions: []
